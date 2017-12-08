@@ -127,6 +127,7 @@ function createRock(x) {
  */
 function endGame(rock) {
   gameInterval = clearInterval();
+  ROCKS.spice(0)
   var el = document.getElementsByClassName('rock');
   while (el.length > 0){
     el[0].parentNode.removeChild(el[0]);
