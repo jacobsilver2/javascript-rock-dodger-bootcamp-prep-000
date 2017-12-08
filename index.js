@@ -91,7 +91,6 @@ function createRock(x) {
      */
      if(checkCollision(rock)){
        endGame();
-       console.log(ROCKS);
      };
 
     /**
