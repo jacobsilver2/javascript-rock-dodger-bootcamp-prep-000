@@ -126,7 +126,7 @@ function createRock(x) {
  * and removing the `moveDodger` event listener.
  * Finally, alert "YOU LOSE!" to the player.
  */
-function endGame() {
+function endGame(rock) {
   gameInterval = null;
   removeElementsByClass(rock);
   window.removeEventListener('keydown', moveDodger);
