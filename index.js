@@ -190,7 +190,7 @@ function moveDodgerRight() {
  function removeElementsByClass(className){
    var elements = document.getElementsByClassName(className);
    for (var i = 0; i<elements.length; i++){
-       elements[0].parentNode.removeChild(elements[0]);
+       elements.splice[0];
    }
 }
 
