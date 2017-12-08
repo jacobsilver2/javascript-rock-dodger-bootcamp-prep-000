@@ -127,7 +127,7 @@ function createRock(x) {
  */
 function endGame(rock) {
   gameInterval = clearInterval(gameInterval);
-  var el = document.getElementsByClassName('rock');
+  var el = document.getElementsByClassName('rock').parentNode;
   for (var i = 0; el.length > 0; i++){
     el[i].parentNode.removeChild(el[i]);
   }
@@ -191,7 +191,7 @@ function moveDodgerRight() {
  */
  function removeElementsByClass(className){
    var elements = document.getElementsByClassName(className);
-   while(elements.length > 0){
+   for (var i = 0; i<elements.length; i++){
        elements[0].parentNode.removeChild(elements[0]);
    }
 }
