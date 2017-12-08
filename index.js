@@ -171,7 +171,7 @@ function moveDodgerLeft() {
       if (left > 0 ) {
         window.requestAnimationFrame(stepLeft)
       }
-      left = 0
+      left = 0;
     }
     window.requestAnimationFrame(stepLeft)
 }
