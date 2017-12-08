@@ -178,8 +178,6 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var right = positionToInteger(DODGER.style.left);
-
-
       if (right < 360 ) {
         DODGER.style.left = `${right += 4}px`
         window.requestAnimationFrame(moveDodgerRight)
