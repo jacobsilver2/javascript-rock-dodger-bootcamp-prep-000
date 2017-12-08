@@ -131,7 +131,6 @@ function endGame(rock) {
   while (el.length > 0){
     el[0].parentNode.removeChild(el[0]);
   }
-  ROCKS.splice(0);
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }
