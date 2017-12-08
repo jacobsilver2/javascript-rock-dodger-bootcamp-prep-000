@@ -128,8 +128,8 @@ function createRock(x) {
 function endGame(rock) {
   gameInterval = clearInterval();
   var el = document.getElementsByClassName('rock');
-  while (el.length > 0){
-    el[0].parentNode.removeChild(el[0]);
+  for (var i = 0; el.length > 0 i++){
+    el[i].parentNode.removeChild(el[i]);
   }
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
