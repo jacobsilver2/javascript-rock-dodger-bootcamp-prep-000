@@ -128,7 +128,6 @@ function createRock(x) {
  */
 function endGame(rock) {
   gameInterval = clearInterval();
-  // removeElementsByClass(rock);
   var el = document.getElementsByClassName('rock');
   while (el.length > 0){
     el[0].parentNode.removeChild(el[0]);
