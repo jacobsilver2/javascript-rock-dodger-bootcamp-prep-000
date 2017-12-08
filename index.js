@@ -49,6 +49,7 @@ function checkCollision(rock) {
                */
                (rockLeftEdge<dodgerLeftEdge && rockRightEdge >=dodgerLeftEdge) || (rockLeftEdge>=dodgerLeftEdge && rockRightEdge<=dodgerRightEdge) || (rockLeftEdge<dodgerRightEdge && rockRightEdge > dodgerRightEdge)
              ) {
+               ROCKS.splice(0);
       return true
     }
   }
@@ -90,7 +91,6 @@ function createRock(x) {
      */
      if(checkCollision(rock)){
        endGame();
-       ROCKS.splice(0);
        console.log(ROCKS);
      };
 
